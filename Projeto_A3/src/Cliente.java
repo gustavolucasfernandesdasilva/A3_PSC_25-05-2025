@@ -1,33 +1,34 @@
+
 public class Cliente {
-    private  String nome;
-    private  String regiao;
+    private String nome;
     private int Nprocesso;
     private int cpf;
+    private String regiao;
+    private String telefone;
 
 
-    public void Cliente(String nome, String regiao,int Nprocesso , int cpf) {
+    public Cliente (String nome, int Nprocesso, String regiao , String telefone) {
         this.nome = nome;
-        this.regiao = regiao;
         this.Nprocesso = Nprocesso;
         this.cpf = cpf;
+        this.regiao = regiao;
+        this.telefone = telefone;
     }
 
 
-  public String getNome(){
+    public String getNome(){
         return nome;
   }
-  public String getrRegiao(){
-        return regiao;
-    }
-
     public int getCpf() {
         return cpf;
     }
-
-    public int getNprocesso() {
-        return Nprocesso;
+    public String getregiao() {
+        return regiao;
     }
-}
+    public String getTelefone() { return telefone;}
+
+    }
+
 
 
 
